@@ -18,7 +18,8 @@ const db_message = db.model('posts', {
 		},
     hashtag: {
 			type: mongoose.Schema.Types.ObjectId,
-			ref: 'hashtag'
+			ref:'hashtag'
+
 		},
 
 		like: {
