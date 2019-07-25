@@ -3,8 +3,9 @@ const mongoose = require('mongoose')
 
 const db_message = db.model('posts', {
     username: {
-			type: String,
-		  required: true
+			type: mongoose.Schema.Types.ObjectId,
+			ref:'user',
+		  required: [true, 'Username is required']
 		},
 
 		date: {
