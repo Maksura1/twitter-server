@@ -18,7 +18,7 @@ app.get('/api/messages', require('./controllers/get_messages'))
 app.post('/api/hashtags', require('./controllers/post_hashtag'))
 app.get('/api/hashtags', require('./controllers/get_hashtag'))
 
-app.post('/api/register', require('./controllers/post_user'))
+app.post('/api/user', require('./controllers/post_user'))
 
 //connect to port on env
 app.listen(process.env.PORT, (err) => {
