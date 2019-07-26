@@ -1,6 +1,7 @@
 const db = require('../db')
 const mongoose = require('mongoose')
 
+//messages are linked to user and hashtag
 const db_message = db.model('posts', {
     username: {
 			type: mongoose.Schema.Types.ObjectId,

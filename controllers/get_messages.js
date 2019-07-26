@@ -1,3 +1,5 @@
+//allows you to get messages, sorted by Date
+//
 const db_message = require('../models/message')
 
 module.exports = (req, res) => {
